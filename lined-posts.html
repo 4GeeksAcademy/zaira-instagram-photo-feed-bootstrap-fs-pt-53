@@ -16,17 +16,18 @@
     <div class="container-fluid">
 
         <!-- This is the top bar -->
-        <div class="p-3 row bg-light">
-            <div class="col-lg-9 col-sm-6">
+        <div class="p-3 row bg-light d-flex ">
+            <div class="col">
                 <i class="bi bi-instagram fs-4"> </i><strong class="fs-4">Instagram</strong>
             </div>
 
             <!-- modal & trigger button -->
-            <div class="col-lg-2 col-sm-4 pe-0 position-end-0 align-self-end">
+            <div class="col justify-content-end pe-0 float-end d-flex">
 
                 <!-- modal's trigger button -->
-                <button type="button" class="btn btn-primary btn-outline-success bg-success text-light fs-6 px-2"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button"
+                    class="py-1 my-1 btn btn-sm btn-primary btn-outline-success bg-success text-light custom-smaller-font"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" id="createPostButton">
                     Create a new post
                 </button>
 
@@ -64,15 +65,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- dropdown & button-->
-            <div class="col-lg-1 col-sm-2">
-                <!-- botón de ajustes -->
-                <div class="col-1 dropdown">
-                    <button class="btn btn--primary dropdown-toggle btn-outline-secondary bg-secondary text-light"
+                <!-- dropdown & button-->
+                <div class="dropdown">
+                    <button
+                        class="p-1 ms-2 my-1 btn btn--primary btn-outline-secondary bg-secondary text-light dropdown-toggle pe-2"
                         type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i
-                            class="bi bi-gear"></i>
+                            class="bi bi-gear-fill px-2"></i>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -85,13 +84,14 @@
         </div>
 
         <!-- buttons to select view type -->
-        <div class="col-12 d-flex justify-content-center">
-            <button class="border border-white bg-white p-2">
-                <a href="/index.html#posts-grid"><img width="13px" alt="13px" src="/assets/grey-grid.png"></a>
+        <div class="col-12 d-flex justify-content-center gap-4 pt-3">
+            <button type="button" class="btn btn-secondary btn-outline-primary btn-sm border-0"
+                style="font-size:xx-small;"><a href="/index.html#posts-grid"><img width="10px" alt="10px"
+                        src="/assets/grey-grid.png"></a>
             </button>
 
-            <button class="border border-white bg-white p-2">
-                <img width="15px" alt="15px" src="/assets/square-grey.png">
+            <button type="button" class="btn btn-secondary btn-outline-primary btn-sm border-0"
+                style="font-size:xx-small;"><a href="#"><img width="10px" alt="10px" src="/assets/square-grey.png"></a>
             </button>
         </div>
 
